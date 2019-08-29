@@ -66,7 +66,7 @@
 
 				statusElem.innerHTML = req.statusText; // показать статус (Not Found, ОК..)
                 statusElem.innerHTML+= " - "+req.status;
-                statusElem.innerHTML+= "["+req.responseText.slice(0, 7)+"]";
+                //statusElem.innerHTML+= "["+req.responseText.slice(0, 7)+"]";
 
 				if(req.status == 200) { 
 					 // если статус 200 (ОК) - выдать ответ пользователю
@@ -77,7 +77,7 @@
                         ean = [];
                         
                     }
-                    statusElem.innerHTML+= " resp: "+req.responseText;
+                    statusElem.innerHTML+= " resp:<br>"+req.responseText;
 				}
 				// тут можно добавить else с обработкой ошибок запроса
                 req = null;
@@ -86,7 +86,7 @@
 		}
 
 		   // (3) задать адрес подключения
-		req.open('POST', 'vote.php?eans='+ean, true);  
+		req.open('GET', 'vote.php?eans='+ean, true);  
 
 		// объект запроса подготовлен: указан адрес и создана функция onreadystatechange
 		// для обработки ответа сервера
