@@ -7,7 +7,8 @@ $client = new SoapClient("http://1claster/dev3_trade/ws/ExchangeTSD.1cws?wsdl", 
 
 $res = $client->CheckState();
 
-echo "alldone ".count($eans)." codes <br>service: ".print_r($res, true);
+echo "alldone ".count($eans)." codes <br>";
+echo "service: ".print_r($res, true);
 
 
 ?>
