@@ -30,3 +30,10 @@ How its work:
     Scan barcodes.
     Wait for uploading barcodes to webservice.
     Done.
+
+
+    GS1 ScanCode has this simbols
+
+    Таблица 1 – Допустимые символы КМ (Valid characters IC): 
+
+    ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"%&'()*+,-./_:;=<>?
